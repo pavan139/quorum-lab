@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "id": "19",
+  "repository_name": "quorum-lab",
+  "title": "Quorum Lab",
+  "package": "quorumlab",
+  "language": "go",
+  "field": "Distributed systems",
+  "focus": "Durable Raft protocol, partitions, restart, quorum commit and bounded safety exploration",
+  "ai_connection": "Understanding replicated metadata and control-plane reliability",
+  "smoke_commands": [
+    {
+      "name": "demo",
+      "args": []
+    },
+    {
+      "name": "evaluate",
+      "args": []
+    }
+  ],
+  "go_command": "./cmd/quorumlab",
+  "layout": {
+    "docs_root": "raft_notes",
+    "tests_root": "raft",
+    "tools_root": "scripts",
+    "config_root": "schedules",
+    "examples_root": "histories",
+    "verifier": "scripts/check_protocol.py",
+    "source_roots": [
+      "cmd",
+      "raft",
+      "simulator"
+    ],
+    "documents": {
+      "architecture": "raft_notes/node-and-transport.md",
+      "design": "raft_notes/persistence-and-commit.md",
+      "review": "raft_notes/protocol-regressions.md",
+      "experiments": "raft_notes/partition-histories.md",
+      "publishing": "raft_notes/publishing-replays.md",
+      "validation": "raft_notes/toolchain-checks.md"
+    }
+  }
+}
