@@ -1,0 +1,2298 @@
+{
+  "seed": 7,
+  "members": 3,
+  "passed": true,
+  "ticks": 360,
+  "messages_delivered": 483,
+  "out_of_fifo_deliveries": 188,
+  "messages_dropped": 258,
+  "crashes": 1,
+  "restarts": 1,
+  "safety_observations": 1562,
+  "committed_commands": [
+    "seed-7-pre",
+    "seed-7-majority",
+    "seed-7-final"
+  ],
+  "final_nodes": [
+    {
+      "id": 1,
+      "role": "follower",
+      "term": 5,
+      "vote": 2,
+      "commit": 6,
+      "last_index": 6,
+      "leader_id": 2
+    },
+    {
+      "id": 2,
+      "role": "leader",
+      "term": 5,
+      "vote": 2,
+      "commit": 6,
+      "last_index": 6,
+      "leader_id": 2
+    },
+    {
+      "id": 3,
+      "role": "follower",
+      "term": 5,
+      "vote": 2,
+      "commit": 6,
+      "last_index": 6,
+      "leader_id": 2
+    }
+  ],
+  "trace": [
+    {
+      "number": 1,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "request_vote"
+    },
+    {
+      "number": 2,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "vote_response"
+    },
+    {
+      "number": 3,
+      "kind": "leader_observed",
+      "node": 1,
+      "term": 1
+    },
+    {
+      "number": 4,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 5,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 6,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 7,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 8,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 9,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 10,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "request_vote"
+    },
+    {
+      "number": 11,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 12,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 13,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 14,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "vote_response"
+    },
+    {
+      "number": 15,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 16,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 17,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 18,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 19,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 20,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 21,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 22,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 23,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 24,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 25,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 26,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 27,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 28,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 29,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 30,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 31,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 32,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 33,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 34,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 35,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 36,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 37,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 38,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 39,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 40,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 41,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 42,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 43,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 44,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 45,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 46,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 47,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 48,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 49,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 50,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 51,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 52,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 53,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 54,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 55,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 56,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 57,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 58,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 59,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 60,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 61,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 62,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 63,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 64,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 65,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 66,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 67,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 68,
+      "kind": "propose",
+      "node": 1,
+      "term": 1
+    },
+    {
+      "number": 69,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 70,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 71,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 72,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 73,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 74,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 75,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 76,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 77,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 78,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 79,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 80,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 81,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 82,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 83,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 84,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 85,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 86,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 87,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 88,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 89,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 90,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 91,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 92,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 93,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 94,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 95,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 96,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 97,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 98,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 99,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 100,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 101,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 102,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 103,
+      "kind": "deliver",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 104,
+      "kind": "deliver",
+      "from": 3,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 105,
+      "kind": "deliver",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries"
+    },
+    {
+      "number": 106,
+      "kind": "deliver",
+      "from": 2,
+      "to": 1,
+      "term": 1,
+      "message": "append_response"
+    },
+    {
+      "number": 107,
+      "kind": "partition"
+    },
+    {
+      "number": 108,
+      "kind": "propose",
+      "node": 1,
+      "term": 1
+    },
+    {
+      "number": 109,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 110,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 111,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 112,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 113,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 114,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 115,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 116,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 117,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 118,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 119,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 120,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 121,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 122,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 123,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 124,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 125,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 126,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 127,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 2,
+      "message": "request_vote",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 128,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 2,
+      "message": "request_vote"
+    },
+    {
+      "number": 129,
+      "kind": "drop",
+      "from": 2,
+      "to": 1,
+      "term": 2,
+      "message": "request_vote",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 130,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 2,
+      "message": "vote_response"
+    },
+    {
+      "number": 131,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 2,
+      "message": "request_vote"
+    },
+    {
+      "number": 132,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 2,
+      "message": "vote_response"
+    },
+    {
+      "number": 133,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 134,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 135,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 136,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 137,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 138,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 139,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 140,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 141,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 142,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 143,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 144,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 145,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 146,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 147,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 148,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 149,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 150,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 151,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 152,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 153,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 154,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 155,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 156,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "request_vote"
+    },
+    {
+      "number": 157,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 158,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "vote_response"
+    },
+    {
+      "number": 159,
+      "kind": "leader_observed",
+      "node": 3,
+      "term": 3
+    },
+    {
+      "number": 160,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 161,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "request_vote",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 162,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 163,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 164,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 165,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 166,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 167,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 168,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 169,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 170,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 171,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 172,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 173,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 174,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 175,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 176,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 177,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 178,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 179,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 180,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 181,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 182,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 183,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 184,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 185,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 186,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 187,
+      "kind": "drop",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 188,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 189,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 190,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 191,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 192,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 193,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 194,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 195,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 196,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 197,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 198,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 199,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 200,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 201,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 202,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 203,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 204,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 205,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 206,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 207,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 208,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 209,
+      "kind": "drop",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 210,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 211,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 212,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 213,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 214,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 215,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 216,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 217,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 218,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 219,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 220,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 221,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 222,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 223,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 224,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 225,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 226,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 227,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 228,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 229,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 230,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 231,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 232,
+      "kind": "drop",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 233,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 234,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 235,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 236,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 237,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 238,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 239,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 240,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 241,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 242,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 243,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 244,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 245,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 246,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 247,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 248,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 249,
+      "kind": "drop",
+      "from": 1,
+      "to": 2,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 250,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 251,
+      "kind": "drop",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response",
+      "reason": "seeded_loss"
+    },
+    {
+      "number": 252,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 253,
+      "kind": "drop",
+      "from": 1,
+      "to": 3,
+      "term": 1,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    },
+    {
+      "number": 254,
+      "kind": "deliver",
+      "from": 3,
+      "to": 2,
+      "term": 3,
+      "message": "append_entries"
+    },
+    {
+      "number": 255,
+      "kind": "deliver",
+      "from": 2,
+      "to": 3,
+      "term": 3,
+      "message": "append_response"
+    },
+    {
+      "number": 256,
+      "kind": "drop",
+      "from": 3,
+      "to": 1,
+      "term": 3,
+      "message": "append_entries",
+      "reason": "partition_or_crashed_destination"
+    }
+  ],
+  "trace_events_omitted": 496,
+  "milestones": [
+    {
+      "number": 3,
+      "kind": "leader_observed",
+      "node": 1,
+      "term": 1
+    },
+    {
+      "number": 68,
+      "kind": "propose",
+      "node": 1,
+      "term": 1
+    },
+    {
+      "number": 107,
+      "kind": "partition"
+    },
+    {
+      "number": 108,
+      "kind": "propose",
+      "node": 1,
+      "term": 1
+    },
+    {
+      "number": 159,
+      "kind": "leader_observed",
+      "node": 3,
+      "term": 3
+    },
+    {
+      "number": 365,
+      "kind": "propose",
+      "node": 3,
+      "term": 3
+    },
+    {
+      "number": 429,
+      "kind": "crash",
+      "node": 3
+    },
+    {
+      "number": 440,
+      "kind": "restart",
+      "node": 3,
+      "term": 3
+    },
+    {
+      "number": 441,
+      "kind": "heal"
+    },
+    {
+      "number": 452,
+      "kind": "leader_observed",
+      "node": 2,
+      "term": 5
+    },
+    {
+      "number": 684,
+      "kind": "propose",
+      "node": 2,
+      "term": 5
+    }
+  ],
+  "elected_leaders_by_term": {
+    "1": 1,
+    "3": 3,
+    "5": 2
+  },
+  "committed_history": [
+    {
+      "index": 1,
+      "term": 1,
+      "command": "",
+      "noop": true
+    },
+    {
+      "index": 2,
+      "term": 1,
+      "command": "seed-7-pre",
+      "noop": false
+    },
+    {
+      "index": 3,
+      "term": 3,
+      "command": "",
+      "noop": true
+    },
+    {
+      "index": 4,
+      "term": 3,
+      "command": "seed-7-majority",
+      "noop": false
+    },
+    {
+      "index": 5,
+      "term": 5,
+      "command": "",
+      "noop": true
+    },
+    {
+      "index": 6,
+      "term": 5,
+      "command": "seed-7-final",
+      "noop": false
+    }
+  ]
+}
