@@ -1,0 +1,54 @@
+{
+  "dataset": "raft-partition-restart-v1",
+  "dataset_sha256": "bf7768d671f751a2fc34c6c95204acd49d13f9a2f3a2cfb9e247f44566cde8cb",
+  "cases_passed": 24,
+  "cases_total": 24,
+  "safety_observations": 52780,
+  "runtime": "deterministic single-process simulator; memory stable stores survive node restart",
+  "limitations": [
+    "bounded evidence, not a formal proof",
+    "no real network or OS/power failure simulation",
+    "static 3/5 membership only",
+    "no snapshots, read-index, linearizable read API, or exactly-once clients"
+  ],
+  "manifest": {
+    "version": "raft-partition-restart-v1",
+    "sizes": [
+      3,
+      5
+    ],
+    "seeds": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12
+    ],
+    "schedule": "40 stable +15 prewrite +120 partition +25 majority +10 crash +120 heal +30 final; losses 0%,10%,15%,15%,10%,10%,0%",
+    "election_timing": "randomized [10+2*ID, 2*(10+2*ID)); seed+1009*ID+7919*restart_term",
+    "heartbeat_ticks": 2,
+    "deliveries_per_tick": 64
+  },
+  "messages_delivered": 18244,
+  "messages_dropped": 8745,
+  "out_of_fifo_deliveries": 9273,
+  "crashes": 24,
+  "restarts": 24,
+  "by_cluster_size": {
+    "3": {
+      "passed": 12,
+      "cases": 12
+    },
+    "5": {
+      "passed": 12,
+      "cases": 12
+    }
+  }
+}
